@@ -1,3 +1,5 @@
+# Introduction
+
 Before jumping right into the content, I thought it might be helpful to provide some quick context on how I approach problems, which will in turn help inform as to the level of detail and approach to many of the topics on this blog.
 
 I believe that one of the most beneficial things that an engineer can do is to gain a firm understanding of concepts and primitives, and become adept at _applying_ those primitives to solve problems.  If you memorize a single solution, you only know a single way to achieve a specific solution.  But, if you fully understand _**how**_ each step functions in achieving the solution, you will then able to solve a wide array of problems.  Because I believe this is an important aspect of Engineering, most of the topics on this site will have a similar level of granularity.  Will you find a deep dive into the python requests library?  No.  But might I discuss higher-level concepts like network latency and how to account for it in system design (agnostic of specific technology or language)?  Absolutely!
