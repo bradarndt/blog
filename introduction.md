@@ -52,7 +52,7 @@ This part is simple boolean algebra
     <==>
     (NOT(a2 != null) or NOT(a2 <= b1)) and (NOT(b2 != null) or NOT(b2 <= a1))
     <==>
-    ((a2 == null) or (a2 > b1)) and ((b2 == null) or (b2 > a1))`
+    ((a2 == null) or (a2 > b1)) and ((b2 == null) or (b2 > a1))
 
 **And finally we are left with our solution!:**
 
