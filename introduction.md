@@ -62,6 +62,6 @@ Two intervals [a1, a2) and [b1, b2) with optionally null (un-ending) endpoints i
 While this is admittedly more of a mathematical example of the concept, it is nevertheless a very concrete example of how understanding simple primitives and how to apply them can be very powerful!
 
 
-_And finally one last thing that might be helpful to explicitly call out is that while the thoughts and ideas expressed on this site are my own, they are by no means novel and are very common in industry.  And because of that, I will not attempt to present an exhaustive analysis of every thought, and fully acknowledge that a good Google search will turn up more in depth reading on many of the topics. _ 
+_And finally one last thing that might be helpful to explicitly call out is that while the thoughts and ideas expressed on this site are my own, they are by no means novel and are very common in industry.  And because of that, I will not attempt to present an exhaustive analysis of every thought, and fully acknowledge that a good Google search will turn up more in depth reading on many of the topics._ 
 
 Enjoy!
