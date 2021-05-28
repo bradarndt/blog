@@ -2,5 +2,9 @@ Before jumping right into the content, I thought it might be helpful to provide 
 
 I believe that one of the most beneficial things that an engineer can do is to gain a firm understanding of concepts and primitives, and become adept at _applying_ those primitives to solve problems.  If you memorize one solution, you know one solution.  But if you know how to _**get to**_ the solution, you are able to solve a wide array of problems.  Because I believe this is an important aspect of Engineering, most of the topics on this site will have a similar level of granularity.  Will you find a deep dive into the python requests library?  No.  But might I discuss higher-level concepts like network latency and how to account for it in system design (agnostic of specific technology or language)?  Absolutely!
 
+To further illustrate this point with a little different angle, let's consider a problem I worked through today:
 
-And one last thing that might be helpful to disclose is that while the thoughts and ideas expressed on this site are my own, they are by no means novel and are very common in industry.  And because of that, I will not attempt to present an exhaustive analysis of every thought, and fully acknowledge that a good google search will turn up more in depth reading on many of the topics.  Enjoy!
+What is a simple algorithm to determine whether two intervals [a1, a2] and [b1, b2] intersect?
+
+
+And one last thing that might be helpful to explicitly call out is that while the thoughts and ideas expressed on this site are my own, they are by no means novel and are very common in industry.  And because of that, I will not attempt to present an exhaustive analysis of every thought, and fully acknowledge that a good google search will turn up more in depth reading on many of the topics.  Enjoy!
