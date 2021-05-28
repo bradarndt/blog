@@ -38,7 +38,7 @@ An interval only "ends" if it's endpoint is non-null.  That means that in order 
 
     (a2 != null and a2 <= b1) or (b2 != null and b2 <= a1)
 
-**Now that we know when they DON'T intersect, let's flip it around to solve for when they do:**
+**Now that we know when they DON'T intersect, let's flip it around to solve for when they DO:**
 
 This part is simple boolean algebra
 
