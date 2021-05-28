@@ -12,16 +12,56 @@ But what if the question you need to answer has variation?  What if your range i
 
 So what do we know?
 
-1. From the above post, we know that two end-inclusive intervals DO NOT intersect if and only if the first ends before the second begins `a2 < b1 or` vice versa `b2 < a1`
+1. From the above post, we know that two end-inclusive intervals DO NOT intersect if and only if the first ends before the second begins `a2 < b1` or vice versa `b2 < a1`
 2. We know some basic boolean algebra
-    1. `NOT(a AND b) <==> NOT(a) OR NOT(B)`
+    1. `NOT(NOT(a)) <==> a`
+    2. `NOT(a AND b) <==> NOT(a) OR NOT(B)`
+    3. `NOT(a OR b) <==> NOT(a) AND NOT(B)`
 
 So let's apply!
 
-First we'll start with our original premise:
-Two end-inclusive intervals intersece if and only if the first ends before the second begins `a2 < b1 or` vice versa `b2 < a1`
+**First we'll start with our original premise:**
 
-Then let's modify it to handle end-exclusive ranges.
-Now that the ends are exclusive, two intervals no longer overlap when the begin of one is exactly equal to the end of the other.  This means that we need to exclude the cases where `a2 == b1` and `b2 == a1`
+Two end-inclusive intervals DO NOT intersect if and only if the first ends before the second begins or vice versa:
 
-And finally one last thing that might be helpful to explicitly call out is that while the thoughts and ideas expressed on this site are my own, they are by no means novel and are very common in industry.  And because of that, I will not attempt to present an exhaustive analysis of every thought, and fully acknowledge that a good google search will turn up more in depth reading on many of the topics.  Enjoy!
+    a2 < b1 or b2 < a1`
+
+**Then let's modify it to handle end-exclusive ranges:**
+
+Now that the ends are exclusive, two intervals also DO NOT intersect when the begin of one is exactly equal to the end of the other.  This means that we need to extend our rule to include the cases where `a2 == b1` and `b2 == a1`.  So we now have:
+
+    a2 <= b1 or b2 <= a1`
+
+**Then let's consider null end points:**
+
+An interval only "ends" if it's endpoint is non-null.  That means that in order for an interval to end before the other begins, we need to add an additional qualification that the endpoint of the first interval must first be null.  So we now have:
+
+    (a2 != null and a2 <= b1) or (b2 != null and b2 <= a1)`
+
+**Now that we know when they DON'T intersect, let's flip it around to solve for when they do:**
+
+This part is simple boolean algebra
+
+    NOT((a2 != null and a2 <= b1) or (b2 != null and b2 <= a1))
+    <==>
+    NOT(a2 != null and a2 <= b1) and NOT(b2 != null and b2 <= a1)
+    <==>
+    (NOT(a2 != null) or NOT(a2 <= b1)) and (NOT(b2 != null) or NOT(b2 <= a1))
+    <==>
+    (NOT(a2 != null) or NOT(a2 <= b1)) and (NOT(b2 != null) or NOT(b2 <= a1))
+    <==>
+    ((a2 == null) or (a2 > b1)) and ((b2 == null) or (b2 > a1))`
+
+**And finally we are left with our solution!:**
+
+Two intervals [a1, a2) and [b1, b2) with optionally null (un-ending) endpoints intersect if and only if:
+
+    ((a2 == null) or (a2 > b1)) and ((b2 == null) or (b2 > a1))
+
+
+While this is admittedly more of a mathematical example of the concept, it is nevertheless a very concrete example of how understanding simple primitives and how to apply them can be very powerful!
+
+
+And finally one last thing that might be helpful to explicitly call out is that while the thoughts and ideas expressed on this site are my own, they are by no means novel and are very common in industry.  And because of that, I will not attempt to present an exhaustive analysis of every thought, and fully acknowledge that a good google search will turn up more in depth reading on many of the topics.  
+
+Enjoy!
