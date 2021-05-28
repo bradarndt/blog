@@ -8,7 +8,7 @@ To further illustrate this point with a little different angle, let's consider a
 
 The solution to that _**specific**_ problem is well known (and can easily be found via [a quick google search](https://www.google.com/search?q=how+to+determine+if+two+intervals+overlap) leading to [stack overflow](https://stackoverflow.com/questions/3269434/whats-the-most-efficient-way-to-test-two-integer-ranges-for-overlap)).
 
-But what if the question you need to answer has variation?  What if your range is not a simple end-inclusive range, but instead, the endpoint is exclusive and can optionally be null to indicate an un-ending upper bound?  Googling for a specific canned solution is not so easy now!  So instead, let's start with the primitives and apply them.
+But what if the question you need to answer has variation?  What if your interval is not a simple end-inclusive range, but instead, the endpoint is exclusive and can optionally be null to indicate an un-ending upper bound?  Googling for a specific canned solution is not so easy now!  So instead, let's start with the primitives and apply them.
 
 So what do we know?
 
