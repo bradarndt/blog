@@ -24,19 +24,19 @@ So let's apply!
 
 Two end-inclusive intervals DO NOT intersect if and only if the first ends before the second begins or vice versa:
 
-    a2 < b1 or b2 < a1`
+    a2 < b1 or b2 < a1
 
 **Then let's modify it to handle end-exclusive ranges:**
 
 Now that the ends are exclusive, two intervals also DO NOT intersect when the begin of one is exactly equal to the end of the other.  This means that we need to extend our rule to include the cases where `a2 == b1` and `b2 == a1`.  So we now have:
 
-    a2 <= b1 or b2 <= a1`
+    a2 <= b1 or b2 <= a1
 
 **Then let's consider null end points:**
 
 An interval only "ends" if it's endpoint is non-null.  That means that in order for an interval to end before the other begins, we need to add an additional qualification that the endpoint of the first interval must first be null.  So we now have:
 
-    (a2 != null and a2 <= b1) or (b2 != null and b2 <= a1)`
+    (a2 != null and a2 <= b1) or (b2 != null and b2 <= a1)
 
 **Now that we know when they DON'T intersect, let's flip it around to solve for when they do:**
 
