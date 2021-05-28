@@ -34,7 +34,7 @@ Now that the ends are exclusive, two intervals also DO NOT intersect when the be
 
 **Then let's consider null end points:**
 
-An interval only "ends" if it's endpoint is non-null.  That means that in order for an interval to end before the other begins, we need to add an additional qualification that the endpoint of the first interval must first be null.  So we now have:
+An interval only "ends" if it's endpoint is non-null.  That means that in order for an interval to end before the other begins, we need to add an additional qualification that the endpoint of the first interval must first be non-null.  So we now have:
 
     (a2 != null and a2 <= b1) or (b2 != null and b2 <= a1)
 
