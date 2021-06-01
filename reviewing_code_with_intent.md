@@ -20,4 +20,4 @@ Another review intent that might less common, but is no less valuable is that of
 
 While the first couple of items on this list focus on perspectives that benefit the code in question, performing code reviews is also a highly underrated way of _learning_.  One of the most valuable skills that an engineer can possess is the ability to dive into unfamiliar code, read it, synthesize it, and make sense of it.  And what better way to get experience at reading code than to jump on code reviews.  At the very least, you can gain repetition and practice at reading unfamiliar code, at best, you might uncover an issue!  But either way, making time to review code is a very low cost way to flex the muscle memory of 'translating' unfamiliar code and building a valueable skill.
 
-
+But regardless of which perspective (or perspectives) you choose to review from, always approach a review with **_intent_**.
