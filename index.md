@@ -1,5 +1,5 @@
 - [Introduction](introduction)
-- [Reviewing Code with Intent](reviewing_code_with_intent)
+- [Reviewing Code with Intent](reviewing_code_with_intent.md)
 <br/>
 <br/>
 <br/>
