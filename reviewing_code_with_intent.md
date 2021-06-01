@@ -12,6 +12,8 @@ As mentioned above, one of the most important roles in any code review is that o
 
 Another important role is that of language expert.  While the functional expert focuses more on high-level design and system impact beyond the code in question, the language expert focuses more on the specific language features, constructs, and features being used to implement the logic.  This may include simplifying logic, common language 'gotchas', suggestions of new/alternate features, or any other suggestion to make a given module or function as usable and performant as possible.
 
-### Review for api passivity
+### Review for API passivity
+
+Another review intent that might less common, but is no less valuable is that of reviewing for API passivity.  Reviewing for API passivity is a way of considering _potential_ impact to the larger system (specifically consumers of the module) without actually having to know the system itself.  Even though they might not know with certainty that changes _will_ impact consumers negatively, by flagging changes that _may_ impact consumers, this reviewer can start the conversation that the code author can then track down to ensure they aren't.
 
 ### Review to learn
