@@ -6,10 +6,11 @@ In this post, I'd like to explore a few of the perspectives from which to approa
 
 ### Review as a functional expert
 
-As mentioned above, one of the most important roles
-
+As mentioned above, one of the most important roles in any code review is that of functional expert.  This reviewer should not only be familiar with the code in question, but the larger system into which the code fits.  This person should be able to think through the changes being made, and look for any un-intended, or un-considered negative effects on the rest of the system.
 
 ### Review as a language expert
+
+Another important role is that of language expert.  While the functional expert focuses more on high-level design and system impact beyond the code in question, the language expert focuses more on the specific language features, constructs, and features being used to implement the logic.  This may include simplifying logic, common language 'gotchas', suggestions of new/alternate features, or any other suggestion to make a given module or function as usable and performant as possible.
 
 ### Review for api passivity
 
