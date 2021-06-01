@@ -14,7 +14,7 @@ Another important role is that of language expert.  While the functional expert 
 
 ### Review for API passivity
 
-Another review intent that might less common, but is no less valuable is that of reviewing for API passivity.  Reviewing for API passivity is a way of considering _potential_ impact to the larger system (specifically consumers of the module) without actually having to know the system itself.  Even though they might not know with certainty that changes _will_ impact consumers negatively, by flagging changes that _may_ impact consumers, this reviewer can start the conversation that the code author can then track down to ensure they aren't.
+Another review intent that might less obvious, but is no less valuable is that of reviewing for API passivity.  Reviewing for API passivity is a way of considering _potential_ impact to the larger system (specifically consumers of the module) without actually having to know the system itself.  Even though they might not know with certainty that changes _will_ impact consumers negatively, by flagging changes that _may_ impact consumers, this reviewer can start the conversation that the code author can then track down to ensure they aren't.
 
 ### Review to learn
 
